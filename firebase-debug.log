@@ -1,0 +1,36 @@
+[debug] [2017-07-26T15:59:02.411Z] ----------------------------------------------------------------------
+[debug] [2017-07-26T15:59:02.413Z] Command:      /usr/local/Cellar/node/8.2.1/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-26T15:59:02.414Z] CLI Version:  3.9.1
+[debug] [2017-07-26T15:59:02.414Z] Platform:     darwin
+[debug] [2017-07-26T15:59:02.414Z] Node Version: v8.2.1
+[debug] [2017-07-26T15:59:02.414Z] Time:         Wed Jul 26 2017 16:59:02 GMT+0100 (BST)
+[debug] [2017-07-26T15:59:02.414Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-26T15:59:02.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-26T15:59:02.426Z] > authorizing via signed-in user
+[debug] [2017-07-26T15:59:02.428Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-07-26T15:59:02.428Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/N0sYuGClY9OCKJgkTRYJ1z8t13pszKlMyDmGTRiVODA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jul 26 2017 16:59:02 GMT+0100 (BST)
+[debug] [2017-07-26T15:59:02.549Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-26T15:59:02.555Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/firetest-4e790  
+ Wed Jul 26 2017 16:59:02 GMT+0100 (BST)
+[debug] [2017-07-26T15:59:03.620Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-26T15:59:03.621Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/firetest-4e790/tokens  
+ Wed Jul 26 2017 16:59:03 GMT+0100 (BST)
+[debug] [2017-07-26T15:59:04.433Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/georgedavies/Documents/Web Dev/TimeSheetsWebApp-master'...
+[info] 
+[debug] [2017-07-26T15:59:04.435Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/firetest-4e790  
+ Wed Jul 26 2017 16:59:04 GMT+0100 (BST)
+[debug] [2017-07-26T15:59:05.112Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-26T15:59:05.112Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/593670302298/clients/_:getWebAppConfig  
+ Wed Jul 26 2017 16:59:05 GMT+0100 (BST)
+[debug] [2017-07-26T15:59:05.622Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
