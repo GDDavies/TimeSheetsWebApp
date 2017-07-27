@@ -1,4 +1,5 @@
-var data_array = [];
+var dataArray = new Array()
+//[];
 
 function TimeSheets() {
   // Initialise Firebase
@@ -12,7 +13,8 @@ function TimeSheets() {
   };
   firebase.initializeApp(config);
   this.newButton = document.getElementById('myBtn');
-  this.newButton.addEventListener('click', writeUserData("JG", "JG", "j@g.com"));
+  this.newButton.addEventListener('click', writeUserData("JG","JG","j@g.com"));
+  dataArray.push(["", ""]);
 }
 
 function writeUserData(userId, name, email) {
@@ -25,16 +27,30 @@ function writeUserData(userId, name, email) {
 function retrieveUserData() {
   var userNamesRef = firebase.database().ref('users/');
   userNamesRef.on('value', function(snapshot) {
+    var arr = new Array()
     snapshot.forEach(function(child) {
+      //var arr = new Array()
+      i = 0
       for(var property in child.val()) {
+        // console.log(i)
+        // console.log(dataArray[0])
+        dataArray[0][i] = [property];
+        i ++
+
+        arr.push(child.val()[property]);
+
+        console.log(arr)
+
         //console.log(property + "=" + child.val()[property]);
-          data_array.push({
-            [property]: child.val()[property]
-          });
-          console.log(data_array)
+          //dataArray.push({
+
+            //[property]: child.val()[property]
+          //});
             //return data_array
         }
     });
+    dataArray.push(arr)
+    console.log(dataArray);
   });
 }
 
